@@ -7,7 +7,6 @@ var makeLGDancers = function(top, left, timeBetweenSteps) {
     width: 160,
     position: "absolute"
   };
-  this.$node.removeClass("dancer");
   this.$node.css(settings);
 };
 

@@ -7,7 +7,6 @@ var makeJake = function(top, left, timeBetweenSteps) {
     width: 250,
     position: "absolute"
   };
-  this.$node.removeClass("dancer");
   this.$node.css(settings);
   this.$node.on('mouseover', this.grow.bind(this));
 };

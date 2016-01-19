@@ -7,7 +7,6 @@ var makeKenny = function(top, left, timeBetweenSteps) {
     width: 350,
     position: "absolute"
   };
-  this.$node.removeClass("dancer");
   this.$node.css(settings);
   this.$node.on('mouseover', this.flip);
 };

@@ -8,7 +8,6 @@ var makeCartwheelDancer = function(top, left, timeBetweenSteps) {
     width: 160,
     position: "absolute"
   };
-  this.$node.removeClass("dancer");
   this.$node.css(settings);
   this.$node.on('mouseover', this.flip.bind(this));
 };

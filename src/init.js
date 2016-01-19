@@ -21,6 +21,33 @@ $(document).ready(function() {
     var dancerMakerFunction = window[dancerMakerFunctionName];
 
     // make a dancer with a random position
+    
+   //  var lineUpFunc = function () {
+   //    console.log('hello');
+   //    for (var i = 0; i <dancers; i ++){  
+   //      dancers[i].lineUp();
+   //    }
+   // };
+    // var lineUpFunc = function () {
+    //   for (var i = 0; i < dancers.length; i ++){
+    //     console.log("dancer[", i,  "] is ", dancers[i]);
+    //     dancers[i].$node.addClass("linedUp");
+    //   }
+    // };
+
+    var lineUpFunc = function () {
+      console.log('hi');
+      var newStyle = {
+        top: 200
+      };
+      for (var i = 0; i <dancers.length; i ++){
+        dancers[i].$node.css(newStyle);
+      }
+    };
+
+
+    $('#lineUp').on('click', lineUpFunc);
+
 
     var dancer = new dancerMakerFunction(
       $("body").height() * Math.random()*.7 + ($("body").height()*.3), // randomizes y
@@ -29,6 +56,7 @@ $(document).ready(function() {
     );
     window.dancers.push(dancer);
     $('body').append(dancer.$node);
+    console.log(dancers);
   });
 });
 

@@ -30,11 +30,6 @@ body, a:link, a:visited, a:active{
   position:absolute;
 }
 
-.mirror {
-        -moz-transform: scaleX(-1);
-        -o-transform: scaleX(-1);
-        -webkit-transform: scaleX(-1);
-        transform: scaleX(-1);
-        filter: FlipH;
-        -ms-filter: "FlipH";
+.linedUp{
+  top: 150;
 }

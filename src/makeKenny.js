@@ -8,7 +8,7 @@ var makeKenny = function(top, left, timeBetweenSteps) {
     position: "absolute"
   };
   this.$node.css(settings);
-  this.$node.on('mouseover', this.flip);
+  this.$node.on('click', this.explosion.bind(this));
 };
 
 makeKenny.prototype = Object.create(makeDancer.prototype);
@@ -26,4 +26,10 @@ makeKenny.prototype.step = function() {
     // other effects you can use on a jQuery-wrapped html tag.
     //this.$node.toggle();
   };
+makeKenny.prototype.explosion = function() {
+  // console.log("enter exploding func");
+  // console.log(this.$node);
+  this.$node.toggle("explode", {pieces: 32}, 1000);
+
+};
 

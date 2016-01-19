@@ -1,10 +1,10 @@
-var makeLGDancers = function(top, left, timeBetweenSteps) {
+var makeKenny = function(top, left, timeBetweenSteps) {
   //var blinkyDancer = makeDancer(top, left, timeBetweenSteps);
   makeDancer.call(this, top, left, 2000);
   var settings = {
-    "content": "url('imgs/spongebob.gif')",
-    height: 160,
-    width: 260,
+    "content": "url('imgs/sp.gif')",
+    height: 250,
+    width: 350,
     position: "absolute"
   };
   this.$node.removeClass("dancer");
@@ -12,11 +12,11 @@ var makeLGDancers = function(top, left, timeBetweenSteps) {
   this.$node.on('mouseover', this.flip);
 };
 
-makeLGDancers.prototype = Object.create(makeDancer.prototype);
-makeLGDancers.prototype.constructor = makeLGDancers;
+makeKenny.prototype = Object.create(makeDancer.prototype);
+makeKenny.prototype.constructor = makeKenny;
 
 
-makeLGDancers.prototype.step = function() {
+makeKenny.prototype.step = function() {
     // call the old version of step at the beginning of any call to this new version of step
     makeDancer.prototype.step.call(this);
 //    makeDancer.prototype.setPosition.call(this, $("body").height() * Math.random(), $("body").width() * Math.random());

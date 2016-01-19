@@ -1,10 +1,15 @@
+*{
+  max-width: 1200px;
+  max-height: 1000px; 
+}
 body, html{
   height:100%;
 }
 body{
-  background-image: url(./imgs/bg.jpg);
+  background: url(./imgs/bg2.jpg);
+  background-size: 1200px 1000px;
+  background-repeat: no-repeat;
   margin: 0px;
-  background-color:#444;
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
@@ -25,4 +30,13 @@ body, a:link, a:visited, a:active{
   border:10px solid red;
   border-radius:10px;
   position:absolute;
+}
+
+.mirror {
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
 }

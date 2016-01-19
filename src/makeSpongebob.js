@@ -1,4 +1,4 @@
-var makeLGDancers = function(top, left, timeBetweenSteps) {
+var makeSpongebob = function(top, left, timeBetweenSteps) {
   //var blinkyDancer = makeDancer(top, left, timeBetweenSteps);
   makeDancer.call(this, top, left, 2000);
   var settings = {
@@ -12,11 +12,11 @@ var makeLGDancers = function(top, left, timeBetweenSteps) {
   this.$node.on('mouseover', this.flip);
 };
 
-makeLGDancers.prototype = Object.create(makeDancer.prototype);
-makeLGDancers.prototype.constructor = makeLGDancers;
+makeSpongebob.prototype = Object.create(makeDancer.prototype);
+makeSpongebob.prototype.constructor = makeSpongebob;
 
 
-makeLGDancers.prototype.step = function() {
+makeSpongebob.prototype.step = function() {
     // call the old version of step at the beginning of any call to this new version of step
     makeDancer.prototype.step.call(this);
 //    makeDancer.prototype.setPosition.call(this, $("body").height() * Math.random(), $("body").width() * Math.random());

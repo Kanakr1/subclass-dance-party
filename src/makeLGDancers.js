@@ -2,14 +2,13 @@ var makeLGDancers = function(top, left, timeBetweenSteps) {
   //var blinkyDancer = makeDancer(top, left, timeBetweenSteps);
   makeDancer.call(this, top, left, 2000);
   var settings = {
-    "content": "url('imgs/spongebob.gif')",
+    "content": "url('imgs/lg.gif')",
     height: 160,
-    width: 260,
+    width: 160,
     position: "absolute"
   };
   this.$node.removeClass("dancer");
   this.$node.css(settings);
-  this.$node.on('mouseover', this.flip);
 };
 
 makeLGDancers.prototype = Object.create(makeDancer.prototype);

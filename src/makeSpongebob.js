@@ -7,7 +7,7 @@ var makeSpongebob = function(top, left, timeBetweenSteps) {
     width: 260,
     position: "absolute"
   };
-  this.$node.removeClass("dancer");
+  //this.$node.removeClass("dancer");
   this.$node.css(settings);
   this.$node.on('mouseover', this.flip);
 };

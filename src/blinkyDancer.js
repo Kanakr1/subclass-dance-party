@@ -11,9 +11,8 @@ var makeLGDancers = function(top, left, timeBetweenSteps) {
   this.$node.on('mouseover', this.flip);
 };
 
-makeLGDancers.prototype = Object.create(makeDancer.prototype);
+ makeLGDancers.prototype = Object.create(makeDancer.prototype);
 makeLGDancers.prototype.constructor = makeLGDancers;
-
 
 makeLGDancers.prototype.step = function() {
   makeDancer.prototype.step.call(this);

@@ -1,10 +1,8 @@
 $(document).ready(function() {
-  console.log("document.ready function is running");
   window.dancers = [];
   var aligned = false;
   
   var lineUpFunc = function () {
-          console.log(aligned);
   if (!aligned){
     for (var i = 1; i <= dancers.length; i ++){
       var leftDist = 60*i-170;
@@ -20,7 +18,6 @@ $(document).ready(function() {
       for (var j= 0; j < dancers.length; j ++){
         var h = $("body").height() * Math.random()*0.7 + ($("body").height()*0.3);
         var w = $("body").width() * Math.random() - 0.15* $("body").width();
-        //console.log(h,w);
         dancers[j].setPosition(h, w);
       }
       $('#lineUp').html("Line 'em up!");
@@ -35,8 +32,8 @@ $(document).ready(function() {
     var dancerMakerFunction = window[dancerMakerFunctionName];
 
     var dancer = new dancerMakerFunction(
-      $("body").height() * Math.random()*0.7 + ($("body").height()*0.3), // randomizes y
-      $("body").width() * Math.random() - 0.15* $("body").width(), // x
+      $("body").height() * Math.random()*0.7 + ($("body").height()*0.3),
+      $("body").width() * Math.random() - 0.15* $("body").width(), 
       Math.random() * 1000
     );
 

@@ -1,5 +1,4 @@
 var makeLSP = function(top, left, timeBetweenSteps) {
-  //var blinkyDancer = makeDancer(top, left, timeBetweenSteps);
   makeDancer.call(this, top, left, 1000);
   var settings = {
     "content": "url('imgs/LSP.gif')",
